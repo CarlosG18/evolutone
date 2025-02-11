@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$PYTHONSTARTUP
+.env
+*.env
+
+# Virtualenv
+venv/
+ENV/
+*.egg-info/
+
+# Django
+*.log
+*.sqlite3
+/db.sqlite3
+/media/
+/staticfiles/
+/static/
+
+# Migrations (opcional, se quiser versionar)
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Node.js (caso tenha frontend integrado)
+node_modules/
+npm-debug.log
+yarn.lock
+
+# Coverage e testes
+htmlcov/
+.coverage
+.tox/
+.nox/
+pytest_cache/
+
+# Configuração do sistema
+.DS_Store
+Thumbs.db
