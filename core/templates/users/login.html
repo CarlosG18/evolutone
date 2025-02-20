@@ -15,15 +15,23 @@
         </div>
 
         <section class="login">
-            <h2>Login</h2>
             <form action="{% url 'users:login' %}" method="post">
                 {% csrf_token %}
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" required>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
-                <button type="submit">Login</button>
+                <div class="element-form">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="element-form">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <button class="button-user" type="submit">Login</button>
+                <div class="center column element-links">
+                    <a href="">criar conta</a>
+                    <a href="">esqueci minha senha</a>
+                </div>
             </form>
         </section>
+
     </main>
 {% endblock %}

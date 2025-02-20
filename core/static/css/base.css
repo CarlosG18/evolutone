@@ -1,8 +1,8 @@
 :root{
-    --primary-color: #01204E;
-    --secondary-color: #028391;
-    --success-color: #F6DCAC;
-    --info-color: #FEAE6F;
+    --escura: #071952;
+    --escura-clara: #0B666A;
+    --clara-escura: #35A29F;
+    --clara: #97FEED;
     --warning-color: #ffc107;
     --danger-color: #dc3545;
     --light-color: #f8f9fa;
@@ -16,7 +16,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-primary: "Roboto", serif
+    --font-family-primary: "Roboto", serif;
     --font-family-secundary: "Orbitron", serif;
     --font-size-base: 1rem;
     --font-size-lg: 1.25rem;
@@ -38,6 +38,44 @@
 }
 
 body{
-    background-color: var(--secondary-color);
+    background-color: var(--escura-clara);
+    font-weight: 600;
     font-family: var(--font-family-secundary);
+    overflow: hidden;
+}
+
+button{
+    font-family: var(--font-family-secundary);
+    border-radius: 100px;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-sm);
+}
+
+input{
+    font-family: var(--font-family-secundary);
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 24px;
+    box-shadow: var(--box-shadow-sm);
+}
+
+a{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column{
+    flex-direction: column;
 }

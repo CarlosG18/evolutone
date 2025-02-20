@@ -8,6 +8,7 @@ O **Evolutone** é uma aplicação desenvolvida com Django Templates que auxilia
 
 ## 🚀 Tecnologias utilizadas
 
+- **Figma** - Para desenvolvimento do mockup [link do mockup](https://www.figma.com/design/5dhG5pFQQ0IvHwMS2LhR19/Evolutone?node-id=0-1&t=y3RURiGuCYy5B1pS-1)
 - **Django** - Framework web em Python
 - **Django Templates** - Sistema de templates para renderização de páginas
 - **HTML, CSS e JavaScript** - Para construção da interface
