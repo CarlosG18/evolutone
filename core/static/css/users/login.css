@@ -1,0 +1,39 @@
+main{
+    font-family: var(--font-family-secundary);
+}
+
+.logo{
+    width: 100vw;
+    background-color: var(--primary-color);
+    height: 32vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 1s ease-in-out;
+}
+
+.logo img{
+    width: 300px;
+    transition: all 0.5s;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@keyframes fade-in {
+    from {
+      height: 100vh;
+    }
+    to {
+      height: 32vh;
+    }
+  }

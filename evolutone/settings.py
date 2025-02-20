@@ -1,6 +1,6 @@
 from pathlib import Path
 from decouple import config
-from dj_database_url import db_url
+from dj_database_url import parse as db_url
 import os, sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -47,7 +47,7 @@ ROOT_URLCONF = 'evolutone.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'core/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,0 +1,43 @@
+:root{
+    --primary-color: #01204E;
+    --secondary-color: #028391;
+    --success-color: #F6DCAC;
+    --info-color: #FEAE6F;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --gray-color: #6c757d;
+    --gray-dark-color: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-primary: "Roboto", serif
+    --font-family-secundary: "Orbitron", serif;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-sm: 0.875rem;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --line-height-base: 1.5;
+    --border-width: 1px;
+    --border-color: #dee2e6;
+    --border-radius: 0.25rem;
+    --transition-duration: 0.15s;
+    --transition-timing-function: ease-in-out;
+    --transition-delay: 0s;
+    --transition-property: all;
+    --transition: var(--transition-property) var(--transition-duration) var(--transition-timing-function) var(--transition-delay);
+    --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+body{
+    background-color: var(--secondary-color);
+    font-family: var(--font-family-secundary);
+}

@@ -1,11 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends "../partials/base.html" %}
+
+{% load static %}
+
+{% block title %}<title>Login</title>{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/users/login.css' %}">
+{% endblock %}
+
+{% block main %}
+    <main>
+        <div class="logo">
+            <img src="{% static 'img/logo.svg' %}" alt="logo">
+        </div>
+
+        <section class="login">
+            <h2>Login</h2>
+            <form action="{% url 'users:login' %}" method="post">
+                {% csrf_token %}
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+{% endblock %}
