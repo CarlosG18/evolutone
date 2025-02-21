@@ -5,6 +5,7 @@
 
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/main/dashboard/navbar-search.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main/dashboard/cards.css' %}">
 {% endblock %}
 
 {% block main %}
@@ -39,28 +40,73 @@
         </div>
 
         <!-- Cards do dashboard -->
-        <!--
         <div class="dashboard-body">
+
             <div class="dashboard-header">
                 <h1>Dashboard</h1>
             </div>
+
             <div class="dashboard-content">
+
                 <div class="dashboard-content-line1">
                     <div class="dashboard-card">
-
+                        <div class="card-icon">
+                            <img src="{% static 'img/dashboard/icons/Group.svg' %}" alt="">
+                        </div>
+                        <h1 class="card-title">Escolha uma musica!</h1>
+                        <div class="card-search">
+                            <input type="text" placeholder="Search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <p class="card-legenda">Pesquise pelo seu cantor ou banda favorito</p>
                     </div>
                     <div class="dashboard-card">
-
+                        <div class="card-icon">
+                            <img src="{% static 'img/dashboard/icons/Group.svg' %}" alt="">
+                        </div>
+                        <h1 class="card-title">Crie uma nova tarefa!</h1>
+                        <a class="button-dash" href="">Criar uma nova tarefa</a>
                     </div>
                 </div>
+
                 <div class="dashboard-content-line2">
                     <div class="dashboard-card">
-
+                        <div class="card-header">
+                            <h1>Seu Repertorio</h1>
+                            <a class="button-dash" href="">visualizar seu repertorio</a>
+                        </div>
+                        <div class="card-estatisticas-repertorio">
+                            <div class="card-estatistica">
+                                <h1>musicas aprendidas</h1>
+                                <div class="circle">
+                                    <p>10</p>
+                                </div>
+                            </div>
+                            <div class="card-estatistica">
+                                <h1>Tarefas concluidas</h1>
+                                <div class="circle">
+                                    <p>10</p>
+                                </div>
+                            </div>
+                            <div class="card-estatistica">
+                                <h1>Tarefas em aberto</h1>
+                                <div class="circle">
+                                    <p>10</p>
+                                </div>
+                            </div>
+                            <div class="card-estatistica">
+                                <h1>musicas atual</h1>
+                                <div class="circle">
+                                    <img src="{% static 'img/dashboard/perfil.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
-        -->
+
     </div>
 
     <!-- footer -->

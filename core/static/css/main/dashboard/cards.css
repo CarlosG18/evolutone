@@ -1,0 +1,25 @@
+.dashboard-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: var(--escura-opacity);
+    height: 85vh;
+}
+
+.dashboard-cards{
+    width: 472px;
+    height: 297px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-sm);
+    background-color: var(--clara);
+}
+
+.dashboard-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
