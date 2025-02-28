@@ -1,7 +1,5 @@
 /*NavBar search*/
 .nav-search{
-    height: 15vh;
-    width: 100vw;
     background-color: var(--escura);
     display: flex;
     justify-content: space-around;
