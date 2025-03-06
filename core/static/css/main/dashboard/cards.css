@@ -18,10 +18,17 @@ main{
 .nav-search{
     grid-area: nav-search;
     border-bottom: 1px solid var(--clara);
-    border-left: 1px solid var(--clara);
+    position: relative;
+    right: 0;
+    width: 85vw;
+    transition: all 1s ease-in-out;
 }
 
 .dashboard-body{
+    position: relative;
+    right: 0;
+    width: 85vw;
+    transition: all 1s ease-in-out;
     padding: 60px;
     grid-area: dashboard-body;
     background-color: var(--escura-opacity);
@@ -118,6 +125,12 @@ main{
     font-size: 2.5em;
     font-family: var(--font-family-secundary);
     color: white;
+}
+
+.animation-body{
+    right: 13vw;
+    width: 100vw;
+    margin-right: 50px;
 }
 
 @media (max-width: 1366px) {

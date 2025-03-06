@@ -2,6 +2,9 @@
     grid-area: navbar;
     background-color: var(--escura);
     position: relative;
+    right: 0;
+    border-right: 1px solid var(--clara);
+    transition: all 1s ease-in-out;;
 }
 
 .navbar-header{
@@ -25,14 +28,5 @@
 }
 
 .animation{
-    animation: side-left 1s ease-in-out;
+    right: 13vw; 
 }
-
-@keyframes side-left {
-    from {
-      right: 0;
-    }
-    to {
-        right: 20vw;
-    }
-  }
