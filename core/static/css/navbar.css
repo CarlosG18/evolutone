@@ -8,7 +8,7 @@
 }
 
 .navbar-header{
-    padding-right: 20px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,4 +29,42 @@
 
 .animation{
     right: 13vw; 
+}
+
+.ativo{
+    right: 0;
+}
+
+.navbar-links{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.navbar-element-link{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    list-style: none;
+    color: var(--escura-clara);
+}
+
+.link-ativo{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--clara);
+    color: black;
+    transition: all 1s ease-in-out;
+}
+
+.navbar-element-link > h1{
+    font-size: 1em;
 }

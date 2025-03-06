@@ -16,6 +16,81 @@
     {% block css %}{% endblock %}
 </head>
 <body>
-    {% block main %}{% endblock %}
+    <main>
+        <div id="navbar" class="navbar ativo">
+            <div class="navbar-header">
+                <div class="logo-box">
+                    <img src="{% static 'img/logo.svg' %}" alt="logo">
+                </div>
+                <div id="btn-barra-lateral" class="box-icon">
+                    <img src="{% static 'img/dashboard/icons/Sidebar.svg' %}" alt="icon-barra-lateral">
+                </div>
+            </div>
+            <div class="navbar-links">
+                <a class="navbar-element-link {% if dashboard_link %}link-ativo{% endif %}" href="{% url 'main:dashboard' %}">
+                        <div class="icon-box1">
+                            <img src="{% static 'img/dashboard/icons/skip_next_filled.svg' %}" alt="">
+                        </div>
+                        <h1>Dashboard</h1>
+                        <div class="icon-box2">
+                            <img src="{% static 'img/dashboard/icons/arrow_forward.svg' %}" alt="">
+                        </div>
+                </a>
+                
+                <a class="navbar-element-link {% if repertorio_link %}link-ativo{% endif %}" href="{% url 'main:repertorio'%}">
+                        <div class="icon-box1">
+                            <img src="{% static 'img/dashboard/icons/music_note (1).svg' %}" alt="">
+                        </div>
+                        <h1>Repertório</h1>
+                        <div class="icon-box2">
+                            <img src="{% static 'img/dashboard/icons/arrow_forward.svg' %}" alt="">
+                        </div>
+                </a>
+
+                <a class="navbar-element-link {% if tasks_link %}link-ativo{% endif %}" href="{% url 'main:tarefas' %}">
+                        <div class="icon-box1">
+                            <img src="{% static 'img/dashboard/icons/check_box (1).svg' %}" alt="">
+                        </div>
+                        <h1>Tarefas</h1>
+                        <div class="icon-box2">
+                            <img src="{% static 'img/dashboard/icons/arrow_forward.svg' %}" alt="">
+                        </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="container2">
+            <!-- NavBar search -->
+            <div id="nav-search" class="nav-search">
+                <div class="avatar-box center">
+                    <div class="avatar-box-circle">
+                        <img src="{% static 'img/dashboard/perfil.png' %}" alt="avatar">
+                    </div>
+                    <h1>nome do usuario</h1>
+                </div>
+                <div class="nav-search-elements">
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="options">
+                        <div title="notificações" class="box-icon">
+                            <a href=""><img src="{% static 'img/dashboard/icons/Bell.svg' %}" alt=""></a>
+                        </div>
+                        <div title="sair" class="box-icon">
+                            <a href=""><img src="{% static 'img/dashboard/icons/Log out.svg' %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dashboard-body" class="dashboard-body ativo">
+                {% block main %}{% endblock %}
+            </div>
+        </div>
+    </main>
+    
+    <script src="{% static 'js/main/dashboard/main.js' %}"></script>
 </body>
 </html>

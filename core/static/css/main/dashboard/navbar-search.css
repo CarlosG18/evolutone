@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: center;
     font-family: var(--font-family-primary);
+    padding: 10px;
     color: var(--clara);
 }
 
@@ -60,4 +61,8 @@
 .box-icon a > img{
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 1366px) {
+    
 }

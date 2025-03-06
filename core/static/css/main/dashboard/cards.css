@@ -1,11 +1,12 @@
 main{
     display: grid;
-    grid-template-columns: 17vw 83vw;
+    grid-template-columns: 25vw 75vw;
     grid-template-rows: auto;
     grid-template-areas: "navbar container2";
 }
 
 .container2{
+    transition: all 1s ease-in-out;
     grid-area: container2;
 
     display: grid;
@@ -26,7 +27,6 @@ main{
 
 .dashboard-body{
     position: relative;
-    right: 0;
     width: 85vw;
     transition: all 1s ease-in-out;
     padding: 60px;
