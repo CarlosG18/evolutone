@@ -6,3 +6,9 @@ def login(request):
 
 def cadastro(request):
     return render(request, 'users/cadastro.html')
+
+def resetar_password(request):
+    return render(request, 'users/reset_password.html')
+
+def reset1(request, token):
+    return render(request, 'users/reset_password2.html')
